@@ -17,9 +17,9 @@ const Certificate = React.forwardRef((props, ref) => (
         <h3 className="name">{props.studentName}</h3>
         <p>has successfully completed</p>
         <h3>{props.courseName}</h3>
-        <h3>Batch: {props.batch}</h3> 
-        <p>Duration of Training Course: <strong>08 Months</strong></p>
-        <p>From <strong>June 2023</strong> to <strong>Jan 2024</strong></p>
+        <h3>: {props.batch}</h3> 
+        <p>Duration of Training Course: <strong>01 Year</strong></p>
+        <p>From <strong> 2 June 2023</strong> to <strong> 2 June 2024</strong></p>
         <img className='logo' src={Logo} alt="Logo" />
         <div className="signatures">
             <div>
@@ -64,9 +64,9 @@ const CertificateComponent = () => {
         <div className='certificateDiv' >
             <Certificate 
                 ref={certificateRef} 
-                studentName={formData.name || "Areeb Ur Rehman Khan"} 
-                courseName={formData.course || "Mern stack Web-development"}
-                batch={formData.batch || "Morning Batch"} // Pass the batch prop here
+                studentName={formData.name || "Areeb Ur Rehman Khan"}
+                courseName={formData.course || "Web & Mobile & App Development"}
+                batch={formData.batch || "Morning Batch:10"} // Pass the batch prop here
             />
             <div className='btnDiv' style={{ padding: "20px" }}>
                 <button className="btn" onClick={handlePrint}>Print</button>
